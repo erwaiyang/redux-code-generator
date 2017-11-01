@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "test": "NODE_ENV=test mocha ./test",
     "test:watch": "NODE_ENV=test mocha -w ./test",
-    "coverage": "nyc npm test"
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -36,6 +36,7 @@
     "babel-register": "^6.26.0",
     "chai": "^4.1.2",
     "copy-webpack-plugin": "^4.2.0",
+    "coveralls": "^3.0.0",
     "eslint": "^4.10.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "2.7.0",
