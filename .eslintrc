@@ -4,3 +4,6 @@ root: true
 parser: babel-eslint
 
 extends: eslint-config-airbnb-base
+
+env:
+  browser: true
