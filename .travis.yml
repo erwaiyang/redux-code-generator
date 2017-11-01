@@ -1,0 +1,26 @@
+language: node_js
+node_js:
+  - "7.9.0"
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+install:
+  - yarn install
+
+script:
+  - npm run lint
+  - npm test
+  - npm run build
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist
+
+branches:
+  only:
+    - master
