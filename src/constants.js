@@ -18,5 +18,6 @@ function actionsTemplate(ACTIONTYPE, actionType) {
 module.exports = {
   STATUSES,
   constantsTemplate,
+  actionTemplate,
   actionsTemplate,
 };
