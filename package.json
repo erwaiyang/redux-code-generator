@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.config.js",
+    "start": "webpack -w --config webpack.config.js",
     "lint": "eslint .",
     "test": "mocha",
     "test:watch": "mocha -w"
