@@ -3,9 +3,7 @@ function upperCaseAndUnderscoreFormatter(value) {
 }
 
 function camelCaseFormatter(value) {
-  return value.replace(/\s\w{1}/g, (match, p1) =>
-    match.charAt(1).toUpperCase()
-  );
+  return value.replace(/\s\w{1}/g, match => match.charAt(1).toUpperCase());
 }
 
 module.exports = {
